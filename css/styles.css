@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+@import 'cards.css';
+@import 'login.css';
+
+:root {
+  --corprincipal: #eca0ff;
+  --white: #fff;
+  --brown: #422800;
+  --rose: #ffcbe1;
+}
+
+* {
+  font-family: 'Mukta', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+  font-weight: 800;
+  color: var(--brown);
+}
+
+.no-click {
+  pointer-events: none;
+  cursor: default;
+}
+
+p,
+h5 {
+  color: var(--brown);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  padding-top: 150px;
+}
+
+.navicons {
+  color: var(--corprincipal);
+  margin-right: 1rem;
+}
+
+.navbar-divider {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 17px 12px -20px;
+  background-color: var(--white);
+}
+
+.fotouser {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+}
+
+.icons {
+  color: var(--brown);
+  font-size: 1.75rem;
+}
+
+.icons:hover {
+  color: var(--rose);
+}
+
+.italico {
+  font-style: italic;
+}
+
+/* From Uiverse.io by alexmaracinaru */
+.citacao {
+  width: 190px;
+  height: 264px;
+  background: var(--brown);
+  font-family: inherit;
+  position: relative;
+  border-radius: 8px;
+}
+
+.quote {
+  color: rgba(102, 88, 43, 0.801);
+  padding-left: 30px;
+  position: relative;
+}
+
+.citacao-name {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgb(134, 115, 90);
+  padding: 30px;
+  line-height: 17px;
+}
+
+.body-text {
+  font-size: 20px;
+  font-weight: 900;
+  padding: 60px 40px 0;
+  color: rgb(212, 190, 140);
+  position: absolute;
+  top: 20px;
+  left: 1px;
+  line-height: 23px;
+}
+
+.author {
+  margin-top: 5px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.citacao:hover .author {
+  opacity: 1;
+}
+
+.pic {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(212, 190, 140);
+  border-radius: 50%;
+}
+
+.author-container {
+  display: flex;
+  align-items: center;
+}
+
+.author {
+  font-weight: 700;
+  color: rgb(212, 190, 140);
+  margin-top: 40px;
+  padding-left: 30px;
+}
+
+.button-74 {
+  background-color: var(--white);
+  border: 2px solid var(--brown);
+  border-radius: 30px;
+  box-shadow: var(--brown)4px 4px 0 0;
+  color: var(--brown);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  padding: 0 18px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  color: var(--rose);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    padding: 0 25px;
+  }
+}
